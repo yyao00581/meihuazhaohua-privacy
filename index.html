@@ -10,20 +10,20 @@
   body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-    line-height: 1.7;
+    line-height: 1.85;
     color: #1a1a1a;
     background: #faf7f2;
     padding: 40px 20px;
   }
-  .wrap { max-width: 640px; margin: 0 auto; }
+  .wrap { max-width: 680px; margin: 0 auto; }
   .card {
     background: #fff;
     border: 1px solid #e8e2d4;
     border-radius: 8px;
-    padding: 36px 32px;
+    padding: 40px 36px;
   }
   h1 {
-    font-size: 22pt;
+    font-size: 21pt;
     font-weight: 700;
     margin: 0 0 6pt 0;
     letter-spacing: -0.01em;
@@ -31,45 +31,48 @@
   .sub {
     color: #888;
     font-size: 10pt;
-    margin-bottom: 24pt;
+    margin-bottom: 28pt;
   }
   h2 {
     font-size: 12pt;
     font-weight: 700;
-    margin: 20pt 0 6pt 0;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: #d85a30;
+    margin: 26pt 0 8pt 0;
+    letter-spacing: 0.02em;
+    color: #b8441c;
   }
-  p { margin: 6pt 0; font-size: 11pt; }
-  ul { margin: 6pt 0; padding-left: 22pt; }
-  li { margin: 3pt 0; font-size: 11pt; }
-  .big {
-    font-size: 12pt;
-    padding: 14pt 18pt;
+  p { margin: 8pt 0; font-size: 11pt; }
+  ul { margin: 8pt 0; padding-left: 24pt; }
+  li { margin: 5pt 0; font-size: 11pt; }
+  .summary {
+    padding: 16pt 20pt;
     background: #faf6ef;
     border-left: 3pt solid #d85a30;
     border-radius: 2pt;
-    margin: 14pt 0;
+    margin: 0 0 24pt 0;
+    font-size: 11pt;
   }
-  .row { display: flex; gap: 8pt; flex-wrap: wrap; margin: 8pt 0 0; }
-  .pill {
-    display: inline-block;
-    padding: 4pt 10pt;
-    background: #f0ebe0;
-    border-radius: 100pt;
-    font-size: 10pt;
-    color: #555;
+  .summary strong { display: block; margin-bottom: 4pt; font-size: 12pt; }
+  .meta {
+    margin-top: 30pt;
+    padding: 14pt 18pt;
+    background: #f7f7f5;
+    border: 1px solid #e8e2d4;
+    border-radius: 6pt;
+    font-size: 10.5pt;
   }
+  .meta div { margin: 4pt 0; }
   .footer {
-    margin-top: 28pt;
-    padding-top: 14pt;
+    margin-top: 30pt;
+    padding-top: 16pt;
     border-top: 1px solid #e8e2d4;
     font-size: 10pt;
     color: #888;
   }
   .lang { font-size: 9pt; color: #888; margin-top: 6pt; }
   .lang a { color: #888; text-decoration: underline; }
+  table { width: 100%; border-collapse: collapse; margin: 10pt 0; font-size: 10.5pt; }
+  th, td { border: 1px solid #e8e2d4; padding: 7pt 9pt; text-align: left; vertical-align: top; }
+  th { background: #f7f7f5; font-weight: 700; }
 </style>
 </head>
 <body>
@@ -77,55 +80,86 @@
 <div class="card">
 
 <h1>没话找话 · 隐私政策</h1>
-<div class="sub">Mei Hua Zhao Hua · Privacy Policy · 生效日期 2026 年 11 月 15 日</div>
+<div class="sub">Mei Hua Zhao Hua · 生效日期 2026 年 11 月 15 日</div>
 
-<div class="big">
-  <strong>一句话总结：本应用不收集任何数据。</strong><br>
-  没有账号、没有服务器、没有网络请求、没有第三方 SDK、没有广告、没有埋点。<br>
-  你看到的"每天一句话"是预存在你手机里的一句话库，轮换播放。<br>
-  本应用所有功能完全在你的设备上运行。
+<div class="summary">
+<strong>本应用不收集、不存储、不传输、不共享任何用户个人数据。</strong>
+本应用不设用户账号，不设有公司提供的服务器，不含任何网络请求代码，不嵌入任何第三方 SDK、广告组件或数据分析工具。
+本应用的每日内容以内置资源形式随应用一同分发，全部功能均在用户设备本地完成。
+本政策依据 App Store 审核指南 5.1.1(i) 制定，说明本应用的数据处理实践以及用户可行使的权利。
 </div>
 
-<h2>1. 我们收集什么</h2>
-<p>无。</p>
-<p>本应用在运行过程中<strong>不向任何外部服务器发送任何数据</strong>，也不在任何外部位置存储任何数据。"今天是哪句话"由你设备本地的日历和内置的话题库共同决定，所有计算都在你的设备上完成。</p>
+<h2>一、数据收集</h2>
+<p>本应用不收集任何数据。具体而言，本应用：</p>
+<ul>
+  <li>不向任何服务器发送数据，不进行任何形式的网络通信；</li>
+  <li>不在任何外部位置存储数据，亦不进行任何形式的缓存或备份；</li>
+  <li>不收集设备标识符，包括广告标识符（IDFA）及任何设备指纹；</li>
+  <li>不收集用户输入内容、使用记录、位置、通讯录、相册、相机、麦克风等任何信息。</li>
+</ul>
+<p>本应用展示的每日内容依据用户设备本地日期与随应用分发的一句话资源库确定，该计算过程完全在设备本地完成，不涉及任何数据上传。</p>
 
-<h2>2. 我们使用什么权限</h2>
-<p>无。</p>
-<p>本应用<strong>不申请任何设备权限</strong>。不读取通讯录、相册、位置、麦克风、相机，不申请通知权限，不申请本地网络权限，不申请广告标识符（IDFA）。</p>
+<h2>二、设备权限</h2>
+<p>本应用不申请任何设备权限。具体包括：不请求位置信息权限、相册权限、相机权限、麦克风权限、通讯录权限、通知推送权限、本地网络权限及广告跟踪权限。</p>
 
-<h2>3. 第三方</h2>
-<p>无。</p>
-<p>本应用<strong>不嵌入任何第三方 SDK、广告组件或分析工具</strong>。包括但不限于：Google Analytics、Firebase、Crashlytics、友盟、Sentry、任何广告 SDK。</p>
+<h2>三、第三方服务</h2>
+<p>本应用不与任何第三方共享用户数据，亦不存在任何第三方可访问用户数据的情形。本应用未嵌入任何第三方 SDK、广告网络或数据分析工具，包括但不限于 Google Analytics、Firebase、Crashlytics、友盟、Sentry 及任何广告 SDK。</p>
 
-<h2>4. 儿童隐私</h2>
-<p>本应用不收集任何数据，因此不存在"儿童数据收集"问题。本应用面向家庭场景使用，未成年人可在家长的指导下使用。</p>
+<h2>四、你的权利</h2>
+<p>鉴于本应用不收集、不存储任何个人数据，用户的各项权利行使方式如下：</p>
+<table>
+  <tr>
+    <th>权利</th>
+    <th>本应用下的实际情况</th>
+  </tr>
+  <tr>
+    <td>知情权</td>
+    <td>本政策即为完整告知。本应用不存在任何未披露的数据处理活动。</td>
+  </tr>
+  <tr>
+    <td>访问权与可携带权</td>
+    <td>本应用不持有任何可归属于特定用户的个人数据，故不存在可访问或可导出的用户数据。</td>
+  </tr>
+  <tr>
+    <td>更正权</td>
+    <td>本应用不持有任何用户数据，故不存在需要更正的信息。</td>
+  </tr>
+  <tr>
+    <td>删除权</td>
+    <td>本应用不存储用户数据，无数据可删除。用户卸载本应用即实现其全部数据内容的彻底删除，包括随应用分发的一句话资源库。</td>
+  </tr>
+  <tr>
+    <td>撤回同意权</td>
+    <td>本应用未收集任何数据，因此未取得、也不依赖任何基于用户同意的数据处理授权，不存在需要撤回的同意事项。</td>
+  </tr>
+  <tr>
+    <td>投诉与举报</td>
+    <td>如你认为本应用的处理实践侵害了你的权益，可通过本政策第八节列明的邮箱与我们联系，我们将在十五个工作日内予以答复。</td>
+  </tr>
+</table>
 
-<h2>5. 数据删除</h2>
-<p>本应用不存储任何用户数据，因此无数据可删除。卸载本应用即永久删除本应用的所有内容（内置的一句话库会随应用卸载一并删除）。</p>
+<h2>五、数据保留</h2>
+<p>本应用不存储任何用户数据，因此不存在数据保留期限。卸载本应用即永久删除其全部内容。</p>
 
-<h2>6. 政策变更</h2>
-<p>如果未来本应用增加任何联网功能，本政策会相应更新，并随版本发布在 App Store 重新提交审核。届时本页面会同步更新，更新日期会显示在页面顶部。</p>
+<h2>六、未成年人保护</h2>
+<p>本应用不收集任何数据，因此不涉及儿童个人信息的收集。本应用面向家庭场景设计，未成年人可在监护人指导下使用。</p>
 
-<h2>7. 联系我们</h2>
-<p>如果你对本政策有任何疑问：<br>
-邮箱：<a href="mailto:support@meihuazhaohua.app">support@meihuazhaohua.app</a><br>
-（本邮箱仅用于隐私政策相关咨询，不提供客户支持）</p>
+<h2>七、政策更新</h2>
+<p>本政策当前版本随应用版本 1.0 发布。如本应用后续版本增加任何联网功能，我们将先行更新本政策，并随该版本提交 App Store 审核；更新后的政策生效日期将显示于本页顶部。</p>
 
-<div class="row">
-  <span class="pill">零账号</span>
-  <span class="pill">零服务器</span>
-  <span class="pill">零网络请求</span>
-  <span class="pill">零第三方 SDK</span>
-  <span class="pill">零广告</span>
-  <span class="pill">零埋点</span>
+<h2>八、联系我们</h2>
+<p>如您对本政策或本应用的数据处理实践有任何疑问、意见或投诉，请通过以下邮箱与我们联系：</p>
+<p><a href="mailto:mhzhsupport@163.com">mhzhsupport@163.com</a></p>
+<p>我们将在收到您的请求后十五个工作日内予以答复。</p>
+
+<div class="meta">
+  <div><strong>应用名称：</strong>没话找话（Mei Hua Zhao Hua）</div>
+  <div><strong>开发者：</strong>殷巍（Yin Wei）</div>
+  <div><strong>政策版本：</strong>v1.0</div>
+  <div><strong>生效日期：</strong>2026 年 11 月 15 日</div>
 </div>
 
 <div class="footer">
-  <p>没话找话 · Mei Hua Zhao Hua<br>
-  开发者：殷巍 · Yin Wei<br>
-  生效日期：2026 年 11 月 15 日</p>
-
   <p class="lang">English version: <a href="privacy-en.html">privacy-en.html</a></p>
 </div>
 

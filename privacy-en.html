@@ -9,21 +9,21 @@
   * { box-sizing: border-box; }
   body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    line-height: 1.7;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.8;
     color: #1a1a1a;
     background: #faf7f2;
     padding: 40px 20px;
   }
-  .wrap { max-width: 640px; margin: 0 auto; }
+  .wrap { max-width: 680px; margin: 0 auto; }
   .card {
     background: #fff;
     border: 1px solid #e8e2d4;
     border-radius: 8px;
-    padding: 36px 32px;
+    padding: 40px 36px;
   }
   h1 {
-    font-size: 22pt;
+    font-size: 21pt;
     font-weight: 700;
     margin: 0 0 6pt 0;
     letter-spacing: -0.01em;
@@ -31,102 +31,135 @@
   .sub {
     color: #888;
     font-size: 10pt;
-    margin-bottom: 24pt;
+    margin-bottom: 28pt;
   }
   h2 {
     font-size: 12pt;
     font-weight: 700;
-    margin: 20pt 0 6pt 0;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: #d85a30;
+    margin: 26pt 0 8pt 0;
+    color: #b8441c;
   }
-  p { margin: 6pt 0; font-size: 11pt; }
-  ul { margin: 6pt 0; padding-left: 22pt; }
-  li { margin: 3pt 0; font-size: 11pt; }
-  .big {
-    font-size: 12pt;
-    padding: 14pt 18pt;
+  p { margin: 8pt 0; font-size: 11pt; }
+  ul { margin: 8pt 0; padding-left: 24pt; }
+  li { margin: 5pt 0; font-size: 11pt; }
+  .summary {
+    padding: 16pt 20pt;
     background: #faf6ef;
     border-left: 3pt solid #d85a30;
     border-radius: 2pt;
-    margin: 14pt 0;
+    margin: 0 0 24pt 0;
+    font-size: 11pt;
   }
-  .row { display: flex; gap: 8pt; flex-wrap: wrap; margin: 8pt 0 0; }
-  .pill {
-    display: inline-block;
-    padding: 4pt 10pt;
-    background: #f0ebe0;
-    border-radius: 100pt;
-    font-size: 10pt;
-    color: #555;
+  .summary strong { display: block; margin-bottom: 4pt; font-size: 12pt; }
+  .meta {
+    margin-top: 30pt;
+    padding: 14pt 18pt;
+    background: #f7f7f5;
+    border: 1px solid #e8e2d4;
+    border-radius: 6pt;
+    font-size: 10.5pt;
   }
+  .meta div { margin: 4pt 0; }
   .footer {
-    margin-top: 28pt;
-    padding-top: 14pt;
+    margin-top: 30pt;
+    padding-top: 16pt;
     border-top: 1px solid #e8e2d4;
     font-size: 10pt;
     color: #888;
   }
   .lang { font-size: 9pt; color: #888; margin-top: 6pt; }
   .lang a { color: #888; text-decoration: underline; }
+  table { width: 100%; border-collapse: collapse; margin: 10pt 0; font-size: 10.5pt; }
+  th, td { border: 1px solid #e8e2d4; padding: 7pt 9pt; text-align: left; vertical-align: top; }
+  th { background: #f7f7f5; font-weight: 700; }
 </style>
 </head>
 <body>
 <div class="wrap">
 <div class="card">
 
-<h1>Mei Hua Zhao Hua · Privacy Policy</h1>
+<h1>Privacy Policy · Mei Hua Zhao Hua</h1>
 <div class="sub">没话找话 · Effective November 15, 2026</div>
 
-<div class="big">
-  <strong>One-sentence summary: this app does not collect any data.</strong><br>
-  No accounts. No servers. No network requests. No third-party SDKs. No ads. No analytics.<br>
-  The daily prompt you see is selected locally on your device from a built-in prompt library, shown in rotation.<br>
-  All functionality runs entirely on your device.
+<div class="summary">
+<strong>This app does not collect, store, transmit, or share any personal data.</strong>
+The app has no user accounts, no developer-operated servers, no networking code, and no third-party SDKs, advertising components, or analytics tools.
+The daily content is distributed as a bundled resource within the app, and all functionality runs entirely on your device.
+This policy is prepared in accordance with App Store Review Guideline 5.1.1(i) and describes the app's data practices and the rights available to you.
 </div>
 
-<h2>1. What We Collect</h2>
-<p>Nothing.</p>
-<p>This app <strong>does not transmit any data to any external server</strong> and does not store any data externally. Which prompt to show today is determined locally on your device from your calendar and a built-in prompt pool; all computation happens on your device.</p>
+<h2>1. Data Collection</h2>
+<p>This app collects no data. Specifically, the app:</p>
+<ul>
+  <li>does not send data to any server and performs no network communication of any kind;</li>
+  <li>does not store data in any external location, and performs no caching or backup;</li>
+  <li>does not collect device identifiers, including the Advertising Identifier (IDFA) or any device fingerprint;</li>
+  <li>does not collect user input, usage history, location, contacts, photos, camera, microphone, or any other information.</li>
+</ul>
+<p>The daily content shown is determined solely by your device's local date and the bundled prompt library distributed with the app. This computation occurs entirely on your device and involves no data upload.</p>
 
-<h2>2. Permissions We Request</h2>
-<p>None.</p>
-<p>This app <strong>does not request any device permissions</strong>. It does not access contacts, photos, location, microphone, camera, notifications, local network, or the advertising identifier (IDFA).</p>
+<h2>2. Device Permissions</h2>
+<p>This app requests no device permissions whatsoever. Specifically, it does not request location, photo library, camera, microphone, contacts, notification, local network, or advertising tracking permissions.</p>
 
-<h2>3. Third Parties</h2>
-<p>None.</p>
-<p>This app <strong>does not embed any third-party SDK, ad network, or analytics tool</strong>. This includes, but is not limited to: Google Analytics, Firebase, Crashlytics, Umeng, Sentry, or any advertising SDK.</p>
+<h2>3. Third-Party Services</h2>
+<p>This app does not share user data with any third party, and there is no third party with access to user data. The app does not embed any third-party SDK, advertising network, or analytics tool, including but not limited to Google Analytics, Firebase, Crashlytics, Umeng, Sentry, and any advertising SDK.</p>
 
-<h2>4. Children's Privacy</h2>
-<p>Because no data is collected, there is no "children's data collection" issue. This app is intended for family use; minors may use it with parental guidance.</p>
+<h2>4. Your Rights</h2>
+<p>Because this app does not collect or store any personal data, your rights are exercised as follows:</p>
+<table>
+  <tr>
+    <th>Right</th>
+    <th>Status under this app</th>
+  </tr>
+  <tr>
+    <td>Right to be informed</td>
+    <td>This policy constitutes full disclosure. No undisclosed data processing activities exist.</td>
+  </tr>
+  <tr>
+    <td>Right of access and portability</td>
+    <td>The app holds no personal data attributable to any individual user, so no user data is accessible or exportable.</td>
+  </tr>
+  <tr>
+    <td>Right to rectification</td>
+    <td>The app holds no user data, so there is no information requiring correction.</td>
+  </tr>
+  <tr>
+    <td>Right to erasure</td>
+    <td>The app stores no user data and therefore has no data to delete. Uninstalling the app permanently removes all of its content, including the bundled prompt library.</td>
+  </tr>
+  <tr>
+    <td>Right to withdraw consent</td>
+    <td>No data is collected, so no consent-based processing authorization has been obtained or relied upon. There is no consent requiring withdrawal.</td>
+  </tr>
+  <tr>
+    <td>Complaints and reports</td>
+    <td>If you believe the app's practices infringe your rights, contact us at the email address in Section 8. We will respond within fifteen business days.</td>
+  </tr>
+</table>
 
-<h2>5. Data Deletion</h2>
-<p>Because no user data is stored, there is nothing to delete. Uninstalling the app permanently removes all of its content (the built-in prompt library is removed along with the app).</p>
+<h2>5. Data Retention</h2>
+<p>This app stores no user data and therefore has no data retention period. Uninstalling the app permanently removes all of its content.</p>
 
-<h2>6. Policy Changes</h2>
-<p>If this app adds any networked functionality in the future, this policy will be updated and resubmitted with the next app version for App Store review. This page will be updated at the same time, with the effective date shown at the top of the page.</p>
+<h2>6. Children's Privacy</h2>
+<p>Because no data is collected, the collection of children's personal information does not apply. This app is designed for family use; minors may use it under parental guidance.</p>
 
-<h2>7. Contact</h2>
-<p>If you have questions about this policy:<br>
-Email: <a href="mailto:support@meihuazhaohua.app">support@meihuazhaohua.app</a><br>
-(This email is for privacy policy inquiries only; it does not provide customer support.)</p>
+<h2>7. Policy Updates</h2>
+<p>The current version of this policy is submitted with app version 1.0. If a future version adds any networked functionality, we will update this policy first and submit the updated version for App Store review. The effective date of any update will be displayed at the top of this page.</p>
 
-<div class="row">
-  <span class="pill">Zero accounts</span>
-  <span class="pill">Zero servers</span>
-  <span class="pill">Zero network requests</span>
-  <span class="pill">Zero third-party SDKs</span>
-  <span class="pill">Zero ads</span>
-  <span class="pill">Zero analytics</span>
+<h2>8. Contact Us</h2>
+<p>If you have any questions, concerns, or complaints regarding this policy or the app's data practices, please contact us at:</p>
+<p><a href="mailto:mhzhsupport@163.com">mhzhsupport@163.com</a></p>
+<p>We will respond to your request within fifteen business days.</p>
+
+<div class="meta">
+  <div><strong>App name:</strong>Mei Hua Zhao Hua (没话找话)</div>
+  <div><strong>Developer:</strong>Yin Wei (殷巍)</div>
+  <div><strong>Policy version:</strong>v1.0</div>
+  <div><strong>Effective date:</strong>November 15, 2026</div>
 </div>
 
 <div class="footer">
-  <p>Mei Hua Zhao Hua · 没话找话<br>
-  Developer: Yin Wei<br>
-  Effective: November 15, 2026</p>
-
-  <p class="lang">中文版：<a href="privacy.html">privacy.html</a></p>
+  <p class="lang">中文版：<a href="index.html">privacy.html</a></p>
 </div>
 
 </div>
