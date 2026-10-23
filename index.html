@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
+<link rel="alternate" hreflang="zh-CN" href="index.html">
+<link rel="alternate" hreflang="en" href="privacy-en.html">
 <title>隐私政策 · 没话找话</title>
 <style>
   * { box-sizing: border-box; }
@@ -70,6 +72,34 @@
   }
   .lang { font-size: 9pt; color: #888; margin-top: 6pt; }
   .lang a { color: #888; text-decoration: underline; }
+  /* 顶部语言切换条 */
+  .langbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10pt;
+    margin: 0 0 22pt 0;
+    padding-bottom: 14pt;
+    border-bottom: 1px solid #eee7d8;
+  }
+  .langbar .brand {
+    font-size: 10pt;
+    font-weight: 700;
+    color: #b8441c;
+    letter-spacing: 0.06em;
+  }
+  .switch { display: inline-flex; border: 1px solid #e2dacb; border-radius: 999px; overflow: hidden; }
+  .switch a {
+    display: inline-block;
+    padding: 5pt 13pt;
+    font-size: 10pt;
+    text-decoration: none;
+    color: #6b6b6b;
+    background: #fff;
+    line-height: 1.4;
+  }
+  .switch a:hover { background: #f6f1e8; }
+  .switch a.on { background: #b8441c; color: #fff; font-weight: 700; }
   table { width: 100%; border-collapse: collapse; margin: 10pt 0; font-size: 10.5pt; }
   th, td { border: 1px solid #e8e2d4; padding: 7pt 9pt; text-align: left; vertical-align: top; }
   th { background: #f7f7f5; font-weight: 700; }
@@ -78,6 +108,14 @@
 <body>
 <div class="wrap">
 <div class="card">
+
+<div class="langbar">
+  <span class="brand">没话找话 · Mei Hua Zhao Hua</span>
+  <span class="switch">
+    <a class="on" href="index.html" aria-current="page">中文</a>
+    <a href="privacy-en.html" hreflang="en">English</a>
+  </span>
+</div>
 
 <h1>没话找话 · 隐私政策</h1>
 <div class="sub">Mei Hua Zhao Hua · 生效日期 2026 年 11 月 15 日</div>
@@ -160,7 +198,7 @@
 </div>
 
 <div class="footer">
-  <p class="lang">English version: <a href="privacy-en.html">privacy-en.html</a></p>
+  <p class="lang">切换语言：<a href="privacy-en.html" hreflang="en">English version</a></p>
 </div>
 
 </div>
