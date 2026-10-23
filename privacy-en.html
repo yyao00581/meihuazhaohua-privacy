@@ -120,30 +120,57 @@
 <div class="sub">没话找话 · Effective November 15, 2026</div>
 
 <div class="summary">
-<strong>This app does not collect, store, transmit, or share any personal data.</strong>
+<strong>This app does not collect, transmit, or share any personal data.</strong>
 The app has no user accounts, no developer-operated servers, no networking code, and no third-party SDKs, advertising components, or analytics tools.
-The daily content is distributed as a bundled resource within the app, and all functionality runs entirely on your device.
+The topic library and its preset pairings are distributed as a bundled resource within the app, and all functionality runs entirely on your device.
+The app saves a small amount of usage state on your device only (which topics were shown today, which one you selected, and the IDs of topics you have already chosen) so that topics are not repeated. This state contains no information that could identify you, is never uploaded, synced, or shared, and is deleted when you uninstall the app.
 This policy is prepared in accordance with App Store Review Guideline 5.1.1(i) and describes the app's data practices and the rights available to you.
 </div>
 
 <h2>1. Data Collection</h2>
-<p>This app collects no data. Specifically, the app:</p>
+<p>This app collects no personal data. Specifically, the app:</p>
 <ul>
   <li>does not send data to any server and performs no network communication of any kind;</li>
-  <li>does not store data in any external location, and performs no caching or backup;</li>
   <li>does not collect device identifiers, including the Advertising Identifier (IDFA) or any device fingerprint;</li>
-  <li>does not collect user input, usage history, location, contacts, photos, camera, microphone, or any other information.</li>
+  <li>does not collect user input, usage history, location, contacts, photos, camera, microphone, or any other information;</li>
+  <li>does not store, cache, or back up any data outside your device.</li>
 </ul>
-<p>The daily content shown is determined solely by your device's local date and the bundled prompt library distributed with the app. This computation occurs entirely on your device and involves no data upload.</p>
+<p>Which topics are shown is determined by your device's local date, the bundled topic library, and the local usage state described in Section 2. Each day the app shows one or two topics, which may be related, opposite in meaning, or entirely unrelated; once you select and confirm one, it will not appear again. This computation occurs entirely on your device and involves no data upload.</p>
 
-<h2>2. Device Permissions</h2>
+<h2>2. Usage State Kept on Your Device</h2>
+<p>To keep the same topics stable throughout the day and to ensure that topics you have already chosen do not reappear, the app stores the following state inside its app sandbox on your device:</p>
+<table>
+  <tr>
+    <th>Stored item</th>
+    <th>Purpose</th>
+  </tr>
+  <tr>
+    <td>Current date (e.g. 2026-11-15)</td>
+    <td>Detects a new day so that topics are dealt again</td>
+  </tr>
+  <tr>
+    <td>IDs of the topics shown today (one or two)</td>
+    <td>Keeps the same set of topics if you reopen the app the same day</td>
+  </tr>
+  <tr>
+    <td>ID of the topic you confirmed today</td>
+    <td>Shows the "selected" state and prevents duplicate confirmation</td>
+  </tr>
+  <tr>
+    <td>List of topic IDs already chosen</td>
+    <td>Prevents chosen topics from appearing again; clears automatically once the whole library has been used</td>
+  </tr>
+</table>
+<p>All of the above consists solely of dates and topic IDs. It contains no name, account, device identifier, location, or any information that could identify you. It is stored only in the app's sandbox on your device, is never uploaded or synced, and is not shared with any third party. Uninstalling the app deletes it together with the app.</p>
+
+<h2>3. Device Permissions</h2>
 <p>This app requests no device permissions whatsoever. Specifically, it does not request location, photo library, camera, microphone, contacts, notification, local network, or advertising tracking permissions.</p>
 
-<h2>3. Third-Party Services</h2>
+<h2>4. Third-Party Services</h2>
 <p>This app does not share user data with any third party, and there is no third party with access to user data. The app does not embed any third-party SDK, advertising network, or analytics tool, including but not limited to Google Analytics, Firebase, Crashlytics, Umeng, Sentry, and any advertising SDK.</p>
 
-<h2>4. Your Rights</h2>
-<p>Because this app does not collect or store any personal data, your rights are exercised as follows:</p>
+<h2>5. Your Rights</h2>
+<p>Because this app collects no personal data and keeps on your device only the dates and topic IDs described above, your rights are exercised as follows:</p>
 <table>
   <tr>
     <th>Right</th>
@@ -151,19 +178,19 @@ This policy is prepared in accordance with App Store Review Guideline 5.1.1(i) a
   </tr>
   <tr>
     <td>Right to be informed</td>
-    <td>This policy constitutes full disclosure. No undisclosed data processing activities exist.</td>
+    <td>This policy constitutes full disclosure, including the on-device state listed in Section 2. No undisclosed data processing activities exist.</td>
   </tr>
   <tr>
     <td>Right of access and portability</td>
-    <td>The app holds no personal data attributable to any individual user, so no user data is accessible or exportable.</td>
+    <td>The on-device state is held by the app itself on your device. It belongs to no server-side account, and there is no user data that can be exported or migrated.</td>
   </tr>
   <tr>
     <td>Right to rectification</td>
-    <td>The app holds no user data, so there is no information requiring correction.</td>
+    <td>The on-device state consists only of dates and topic IDs and involves no personal information requiring correction.</td>
   </tr>
   <tr>
     <td>Right to erasure</td>
-    <td>The app stores no user data and therefore has no data to delete. Uninstalling the app permanently removes all of its content, including the bundled prompt library.</td>
+    <td>Uninstalling the app permanently deletes all of its on-device content, including the usage state and the bundled topic library. The list of already-chosen topics also clears and resets automatically once the whole library has been used.</td>
   </tr>
   <tr>
     <td>Right to withdraw consent</td>
@@ -171,20 +198,20 @@ This policy is prepared in accordance with App Store Review Guideline 5.1.1(i) a
   </tr>
   <tr>
     <td>Complaints and reports</td>
-    <td>If you believe the app's practices infringe your rights, contact us at the email address in Section 8. We will respond within fifteen business days.</td>
+    <td>If you believe the app's practices infringe your rights, contact us at the email address in Section 9. We will respond within fifteen business days.</td>
   </tr>
 </table>
 
-<h2>5. Data Retention</h2>
-<p>This app stores no user data and therefore has no data retention period. Uninstalling the app permanently removes all of its content.</p>
+<h2>6. Data Retention</h2>
+<p>The on-device usage state remains on your device until you uninstall the app, or until it clears and resets automatically after the whole topic library has been used. Beyond this, the app retains no data, and there is no server-side retention period.</p>
 
-<h2>6. Children's Privacy</h2>
+<h2>7. Children's Privacy</h2>
 <p>Because no data is collected, the collection of children's personal information does not apply. This app is designed for family use; minors may use it under parental guidance.</p>
 
-<h2>7. Policy Updates</h2>
+<h2>8. Policy Updates</h2>
 <p>The current version of this policy is submitted with app version 1.0. If a future version adds any networked functionality, we will update this policy first and submit the updated version for App Store review. The effective date of any update will be displayed at the top of this page.</p>
 
-<h2>8. Contact Us</h2>
+<h2>9. Contact Us</h2>
 <p>If you have any questions, concerns, or complaints regarding this policy or the app's data practices, please contact us at:</p>
 <p><a href="mailto:mhzhsupport@163.com">mhzhsupport@163.com</a></p>
 <p>We will respond to your request within fifteen business days.</p>
